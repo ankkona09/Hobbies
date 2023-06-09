@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hobbies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Hobbies</h1>
+    <div class="hobby-container">
+        <div class="hobby">
+            <div class="hobby-title">Watching Movies</div>
+            <!-- <div class="image"> -->
+            <img class="imagee"
+                src="data:image/png;base64,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"
+                alt="movie img" />
+            <!-- </div> -->
+            <div class="content">Watching movies is a great way of spending time and exploring different stories. It
+                helps
+                us to stay away
+                from
+                the real life and help us imagine a reel life which is way better.<br />Some of my all time favourite
+                movies
+                :
+            </div>
+            <ul class="types">
+                <li>Ratsasan</li>
+                <li>Jab We met</li>
+                <li>Frozen</li>
+            </ul>
+            <button class="hobby-button">Read more</button>
+        </div>
+        <div class="hobby">
+            <div class="hobby-title">Listening to music</div>
+            <img class="imagee"
+                src="data:image/png;base64,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"
+                alt="music img" />
+            <div class="content">Music is a great way of relieving stress. It helps us to calm down and get lost in the
+                world of
+                music.Not
+                only
+                during stress but also during our sad, happy moments in life it plays a vital role.<br />Some of my all
+                time
+                favourite songs :
+            </div>
+            <ul class="types">
+                <li>Labon Ko</li>
+                <li>Kothin</li>
+                <li>Speechless</li>
+            </ul>
+            <button class="hobby-button">Read more</button>
+        </div>
+        <div class="hobby">
+            <div class="hobby-title">Reading novels</div>
+            <img class="imagee"
+                src="https://static.thenounproject.com/png/111406-200.png"
+                alt="readingnovel img" />
+            <div class="content">Reading novels can be a great part of our leisure time. It lets you imagine as the
+                story goes. It feels great to explore different stories which teach us a lot of things in life.
+                .<br />Some
+                of my
+                all time
+                favourite novels :
+            </div>
+            <ul class="types">
+                <li>The Unexpected Guest</li>
+                <li>The Silent Patient</li>
+                <li>The Hating Game</li>
+            </ul>
+            <button class="hobby-button">Read more</button>
+        </div>
+    </div>
+</body>
+
+</html>
